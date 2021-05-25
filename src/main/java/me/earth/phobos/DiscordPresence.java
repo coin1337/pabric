@@ -28,7 +28,7 @@ public class DiscordPresence {
         DiscordPresence.presence.details = mc.currentScreen instanceof GameMenuScreen ? "In the main menu." : "Playing " + (mc.getCurrentServerEntry() != null ? (RPC.INSTANCE.showIP.getValue().booleanValue() ? "on " + mc.getCurrentServerEntry().address + "." : " multiplayer.") : " singleplayer.");
         DiscordPresence.presence.state = RPC.INSTANCE.state.getValue();
         DiscordPresence.presence.largeImageKey = "phobos";
-        DiscordPresence.presence.largeImageText = "Phobos 1.16 by MOMIN5";
+        DiscordPresence.presence.largeImageText = "Pabric 1.16 by chrispycreme420";
         rpc.Discord_UpdatePresence(presence);
         thread = new Thread(() -> {
             while (!Thread.currentThread().isInterrupted()) {
